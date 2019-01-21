@@ -1,0 +1,42 @@
+#ISMAT ! iSale material input file identification string for TEST1
+----------------------------------------------------------------
+MATNAME    Material name             : target_         : impactr
+EOSNAME    EOS name                  : basalt_         : aluminu
+EOSTYPE    EOS type                  : tillo           : tillo 
+STRMOD     Strength model            : LUNDD           : JNCK 
+DAMMOD     Damage model              : IVANOV          : NONE
+ACFL       Acoustic fluidisation     : NONE            : NONE 
+PORMOD     Porosity model            : WUNNEMA         : WUNNEMA
+THSOFT     Thermal softening         : OHNAKA          : JNCK
+LDWEAK     Low density weakening     : POLY            : NONE
+----- Elastic strength parameters ------------------------------
+POIS       pois                      : 2.5000D-01      : 3.3000D-01
+----- Minimum Pr essure -----------------------------------------
+PMININ     minimum pressure          : XXXXXXXXXX      : -2.440D+09
+----- Thermal parameters ---------------------------------------
+TMELT0     tmelt0                    : 1.3600D+03      : 9.3300D+02
+TFRAC      tfrac                     : 0.7000D+00      : XXXXXXXXXX   
+ASIMON     a_simon                   : 4.5000D+09      : 6.0000D+09
+CSIMON     c_simon                   : 3.0000D+00      : 3.0000D+00
+-------LUNDD parameters------------------------------------------
+YDAM0      ydam0 (ycoh)              : 1.0000D+03      : XXXXXXXXXX
+FRICDAM    fricdam                   : 6.0000D-01      : XXXXXXXXXX
+YLIMDAM    ylimdam                   : 1.0000D+09      : XXXXXXXXXX
+------IVANOV damage model parameters-----------------------------
+IVANOV_A   Damage parameter          : 1.0000D-04      : XXXXXXXXXX
+IVANOV_B   Damage parameter          : 1.0000D-11      : XXXXXXXXXX
+IVANOV_C   Damage parameter          : 3.0000D+08      : XXXXXXXXXX
+----- Johnson-Cook strength parameters --------------------------
+JC_A       strain coeff. a           : XXXXXXXXXX      : 4.9000D+07
+JC_B       strain coeff. b           : XXXXXXXXXX      : 1.5700D+08
+JC_N       strain exponent           : XXXXXXXXXX      : 1.6700D-01
+JC_C       str. rate coeff c         : XXXXXXXXXX      : 1.6000D-02
+JC_M       thermal soft.             : XXXXXXXXXX      : 1.7000D+00
+JC_TREF    ref. temperature          : XXXXXXXXXX      : 2.9300D+02
+---------porosity properties (Wuennemann) ------------------------
+ALPHA0       Initial porosity        : 1.3D+00         : 2.7D+00
+EPSE0        Elastic threshold       : -1.88D-7        : 0.D+00
+ALPHAX       Transition              : 1D+00           : 1D+00
+KAPPA        Exp Coefficient         : 8.60D-01        : 9.00D-01
+CHI          Sound speed ratio       : 1.0D-00         : 1.0D-00
+<<END ! used to identify the end of this file
