@@ -1,0 +1,8 @@
+These are the iSALE input parameters for the DART impact into a 20% porous target, with f=0.6 and Ydam0 = 1.0D+03.
+The simulation starts with Yd1e3_r_1.inp (first regrid) and ends with Yd1e3_r_1.inp (last regrid).
+
+To perform the parameter studies, the user has to change the following input parameters in the material.inp file:
+
+YDAM0........ydam0 (ycoh)......: 1.0000D+03 # This parameter changes the cohesional strength of the damaged material. Measured in Pa. Investigated range: 0.1 kPa - 100 kPa.
+FRICDAM......fricdam...........: 6.0000D-01 # This parameter changes the coefficient of internal friction. Investigated range: 0.2-1.2.
+ALPHA0.......initial porosity..: 1.3000D+00 # This parameter changes the initial distension (1/(1-porosity)). Investigated range: 10%-50%.
