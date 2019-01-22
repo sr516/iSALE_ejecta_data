@@ -1,0 +1,64 @@
+#ISINP
+------------------------------------------------------------------------
+--- this is the new input file used by iSALE versions of v7.0 and higher
+------------------- General Model Info ---------------------------------
+VERSION       __DO NOT MODIFY__             : 4.1
+DIMENSION     dimension of input file       : 2
+PATH          Data file path                : ./
+MODEL         Modelname                     : cs_20cppr
+TDUMP         Dump save interval            : 1.0D-6
+DUMP          Restart with dump             : cs_40cppr/restart.dump
+REGRID        Regridding                    : 1
+NEWCELLH      New cells (hor)               : 0        : 20
+NEWCELLV      New cells (vert)              : 180      : 80
+------------------- Mesh Geometry Parameters ---------------------------
+GRIDH         horizontal cells              : 0           : 2000        : 0
+GRIDV         vertical cells                : 0           : 2000        : 0
+GRIDSPC       grid spacing                  : 1.19D-4
+CYL           Cylind. geometry              : 1.0D0
+------------------- Global setup parameters -----------------------------
+S_TYPE        setup type                    : DEFAULT
+T_SURF        Surface temp                  : 293.D0
+P_SURF        Surface pressure              : 1.0D+5
+GRAD_TYPE     Lithostatic gradient          : DEFAULT
+GRAV_V        Gravitational acceleration    : -9.81D0
+------------------- Projectile ("Object") Parameters --------------------
+OBJNUM        number of objects             : 1
+OBJRESH       CPPR horizontal               : 20
+OBJRESV       CPPR vertical                 : 20
+OBJVEL        object velocity               : -1.92D3
+OBJMAT        object material               : impactr
+OBJTYPE       object type                   : SPHEROID
+------------------- Target Parameters ----------------------------------
+LAYNUM        layers number                 : 1
+LAYPOS        layer position                : 1281
+LAYMAT        layer material                : target_
+EJECT_V       ejecta elevation              : 7.14D-3
+------------------- Time Parameters ------------------------------------
+DT            initial time increment        : 1.0D-8
+DTMAX         maximum timestep              : 0.5D-7
+TEND          end time                      : 2.5D-5
+DTSAVE        save interval                 : 1.0D-6
+------------------- Boundary Condition Parameters ----------------------
+BND_L         left                          : FREESLIP
+BND_R         right                         : FREESLIP
+BND_B         bottom                        : NOSLIP
+BND_T         top                           : OUTFLOW
+------------------- Numerical Stability Parameters ---------------------
+AVIS          art. visc. linear             : 0.2D0
+AVIS2         art. visc. quad.              : 1.0D0
+------------------- Tracer Particle Parameters -------------------------
+TR_QUAL       quality                       : 1
+TR_SPCH       tracer spacing X              : -1.         : -1.
+TR_SPCV       tracer spacing Y              : -1.         : -1.
+TR_VAR        add. tracer fiels             : #TrP-Trp-TrT-TrA-TrV-TrB-TrM#
+------------------- (Material) Model parameters (global) ---------------
+STRESS        Consider stress               : 1
+PARTPRES      Pres. in part.                : 0
+ADVECT        Advect by mass or volume      : 1
+ROCUTOFF      Density cutoff                : 0
+------------------- Data Saving Parameters -----------------------------
+QUALITY       Compression rate              : -50
+VARLIST       List of variables             : #Den-Tmp-Pre-VEL-Sie-Yld#
+------------------------------------------------------------------------
+<<END
